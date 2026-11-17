@@ -7,5 +7,12 @@ class AppTheme {
       seedColor: const Color(0xFFF6A10D),
       brightness: Brightness.light,
     ),
+    scaffoldBackgroundColor: const Color(0xFFF8F9FC),
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.white,
+      foregroundColor: Color(0xFF202124),
+      elevation: 0,
+      centerTitle: false,
+    ),
   );
 }
