@@ -1,20 +1,17 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'theme/app_theme.dart';
+import 'router.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Company Obligations',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
-      home: const Scaffold(
-        body: Center(
-          child: Text('Company Obligations'),
-        ),
-      ),
+      routerConfig: appRouter,
     );
   }
 }
